@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+<section class="text-gray-400 bg-gray-900 body-font h-screen">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h2 class="text-xs text-indigo-400 tracking-widest font-medium title-font mb-1">"One must eat to live, not live to eat"</h2>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-white">Here Is Your Meal Plan</h1>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+          <div class="flex items-center mb-3">
+            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+            <h2 class="text-white text-lg title-font font-medium">Breakfast</h2>
+          </div>
+          <div class="flex-grow">
+            <p class="leading-relaxed text-base">{{diet.breakFast}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+          <div class="flex items-center mb-3">
+            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <h2 class="text-white text-lg title-font font-medium">Lunch</h2>
+          </div>
+          <div class="flex-grow">
+            <p class="leading-relaxed text-base">{{diet.lunch}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+          <div class="flex items-center mb-3">
+            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+              <i class="fa-solid fa-moon"></i>
+            </div>
+            <h2 class="text-white text-lg title-font font-medium">Dinner</h2>
+          </div>
+          <div class="flex-grow">
+            <p class="leading-relaxed text-base">{{diet.dinner}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+{% endblock %}
